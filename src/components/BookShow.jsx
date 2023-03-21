@@ -1,5 +1,5 @@
-const BookShow = () => {
-  return <div>Book Create </div>
-}
+const BookShow = ({book}) => {
+  return <div className="book-show">{book.title}</div>;
+};
 
 export default BookShow;

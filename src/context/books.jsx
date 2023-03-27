@@ -1,18 +1,11 @@
-import {createContext, useState} from "react";
+import {createContext} from "react";
 
 const BookContext = createContext();
 
 function Provider({children}) {
-  const [count, setCount] = useState(5);
 
-  const valueToShare = {
-    count,
-    incrementCount: () => {
-      setCount(count + 1);
-    }
-  };
   return (
-    <BookContext.Provider value={valueToShare}>
+    <BookContext.Provider value={{}}>
       {children}
     </BookContext.Provider>);
 
